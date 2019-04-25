@@ -1,0 +1,10 @@
+2.3
+atomicwrites-python
+attrs-python
+more-itertools-python
+pkgconfig(icu-i18n)
+pluggy-python
+py-python
+pytest-python
+six
+six-python
