@@ -1,10 +1,4 @@
 2.3.1
-atomicwrites-python
-attrs-python
-more-itertools-python
 pkgconfig(icu-i18n)
-pluggy-python
-py-python
+pytest
 pytest-python
-six
-six-python

@@ -4,7 +4,7 @@
 #
 Name     : PyICU
 Version  : 2.3.1
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/e9/35/211ffb949c68e688ade7d40426de030a24eaec4b6c45330eeb9c0285f43a/PyICU-2.3.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e9/35/211ffb949c68e688ade7d40426de030a24eaec4b6c45330eeb9c0285f43a/PyICU-2.3.1.tar.gz
 Summary  : Python extension wrapping the ICU C++ API
@@ -13,25 +13,23 @@ License  : MIT
 Requires: PyICU-license = %{version}-%{release}
 Requires: PyICU-python = %{version}-%{release}
 Requires: PyICU-python3 = %{version}-%{release}
-BuildRequires : atomicwrites-python
-BuildRequires : attrs-python
 BuildRequires : buildreq-distutils3
-BuildRequires : more-itertools-python
+BuildRequires : importlib_metadata
 BuildRequires : pkgconfig(icu-i18n)
-BuildRequires : pluggy-python
-BuildRequires : py-python
+BuildRequires : pytest
 BuildRequires : pytest-python
-BuildRequires : six
-BuildRequires : six-python
+BuildRequires : wcwidth
 
 %description
 ## Welcome
-Welcome to PyICU, a Python extension wrapping the ICU C++ libraries.
-ICU stands for "International Components for Unicode".
-These are the i18n libraries of the Unicode Consortium.
-They implement much of the Unicode Standard,
-many of its companion Unicode Technical Standards,
-and much of Unicode CLDR.
+        
+        Welcome to PyICU, a Python extension wrapping the ICU C++ libraries.
+        
+        ICU stands for "International Components for Unicode".
+        These are the i18n libraries of the Unicode Consortium.
+        They implement much of the Unicode Standard,
+        many of its companion Unicode Technical Standards,
+        and much of Unicode CLDR.
 
 %package license
 Summary: license components for the PyICU package.
@@ -68,7 +66,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1556511238
+export SOURCE_DATE_EPOCH=1561767569
+export GCC_IGNORE_WERROR=1
+export CFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$CFLAGS -fno-lto "
+export FFLAGS="$CFLAGS -fno-lto "
+export CXXFLAGS="$CXXFLAGS -fno-lto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
