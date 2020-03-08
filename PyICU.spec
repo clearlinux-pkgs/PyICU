@@ -4,7 +4,7 @@
 #
 Name     : PyICU
 Version  : 2.3.1
-Release  : 6
+Release  : 7
 URL      : https://files.pythonhosted.org/packages/e9/35/211ffb949c68e688ade7d40426de030a24eaec4b6c45330eeb9c0285f43a/PyICU-2.3.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e9/35/211ffb949c68e688ade7d40426de030a24eaec4b6c45330eeb9c0285f43a/PyICU-2.3.1.tar.gz
 Summary  : Python extension wrapping the ICU C++ API
@@ -53,6 +53,7 @@ python components for the PyICU package.
 Summary: python3 components for the PyICU package.
 Group: Default
 Requires: python3-core
+Provides: pypi(pyicu)
 
 %description python3
 python3 components for the PyICU package.
@@ -67,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1576013677
+export SOURCE_DATE_EPOCH=1583702460
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
