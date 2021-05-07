@@ -4,7 +4,7 @@
 #
 Name     : PyICU
 Version  : 2.7.3
-Release  : 18
+Release  : 19
 URL      : https://files.pythonhosted.org/packages/50/62/230bb78141a03cb3849a1f8ab390eed290a9430b3dabb496c51228271e0b/PyICU-2.7.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/50/62/230bb78141a03cb3849a1f8ab390eed290a9430b3dabb496c51228271e0b/PyICU-2.7.3.tar.gz
 Summary  : Python extension wrapping the ICU C++ API
