@@ -2,5 +2,4 @@ libc.so.6
 libgcc_s.so.1
 libicui18n.so.67
 libicuuc.so.67
-libpthread.so.0
 libstdc++.so.6

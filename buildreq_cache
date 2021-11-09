@@ -1,5 +1,4 @@
-2.7.4
-pip
+2.8
 pkgconfig(icu-i18n)
 pytest-python
 six-python
